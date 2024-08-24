@@ -1,56 +1,69 @@
 package in.sp.model;
 
-
-import java.time.LocalDateTime;
-
 public class Event {
-    private int eventId;
-    private String eventTitle;
-    private String eventVenue;
-    private String eventImage;
-    private String eventDescription;
+    private int eventid;
+    private String title;
+    private String location;
+    private String time;  // Renamed from slots to time
+    private String description;
+    private String imagePath;
+    private double price;  // New field for price
 
     // Getters and Setters
+
     public int getEventId() {
-        return eventId;
+        return eventid;
     }
 
-    public void setEventId(int eventId) {
-        this.eventId = eventId;
+    public void setId(int eventid) {
+        this.eventid = eventid;
     }
 
-    public String getEventTitle() {
-        return eventTitle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setEventTitle(String eventTitle) {
-        this.eventTitle = eventTitle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getEventVenue() {
-        return eventVenue;
+    public String getLocation() {
+        return location;
     }
 
-    public void setEventVenue(String eventVenue) {
-        this.eventVenue = eventVenue;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    
-
-    public String getEventImage() {
-        return eventImage;
+    public String getTime() {
+        return time;
     }
 
-    public void setEventImage(String eventImage) {
-        this.eventImage = eventImage;
+    public void setTime(String time) {
+        this.time = time;
     }
 
-    public String getEventDescription() {
-        return eventDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setEventDescription(String eventDescription) {
-        this.eventDescription = eventDescription;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    public double getPrice() {  // Getter for price
+        return price;
+    }
+
+    public void setPrice(double price) {  // Setter for price
+        this.price = price;
     }
 }
-
